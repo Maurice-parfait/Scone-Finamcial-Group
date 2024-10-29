@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCONE</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <!-- pour les icones -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- pour leaft -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+</head>
+<body class="p-0 m-0 font-Manropa" >
+   
+    <main class="h-auto">
+        <section class="relative inset-0 h-screen max-lg:h-auto max-md:h-auto rounded-bl-3xl rounded-br-3xl w-full max-md:w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)]">
+            <section class="px-28 max-lg:px-16 max-md:px-10 max-sm:px-5">
+                <nav class="flex justify-between  pt-4 items-center ">
+                    <div>
+                        <button class="text-4xl font-bold" type="button">SCONE</button>
+                    </div>
+    
+                    <div class="px-4 py-1 max-lg:hidden max-lg:inset-0 max-lg:bg-red-800  max-lg:rounded-none max-md:hidden">
+                        <ul class="flex max-lg:block max-lg:justify-center" id="navscrol">
+                            <li class="px-5 py-1 text-xl cursor-pointer hover:bg-black hover:text-white hover:rounded-xl">Aceuil</li>
+                            <li class="px-5 py-1 text-xl cursor-pointer hover:bg-black hover:text-white hover:rounded-xl">
+                                <a href="#apropos"> A Propos de Nous</a>
+                            </li>
+                            <li class="px-5 py-1 text-xl cursor-pointer hover:bg-black hover:text-white hover:rounded-xl">
+                                <a href="#service"> Nos Service</a>
+                            </li>
+                            <li class="px-5 py-1 text-xl cursor-pointer hover:bg-black hover:text-white hover:rounded-xl">Blog</li>
+                            <li class="px-5 py-1 text-xl cursor-pointer hover:bg-black hover:text-white hover:rounded-xl">Contact</li>
+                        </ul>
+              
+                    </div>
+    
+                    <div class="">
+                        <button class="border text-lg py-1 px-4 rounded-full  bg-black text-white max-lg:hidden max-md:hidden " type="button">Contact</button>
+                        <div class="hidden max-lg:block">
+                            <button type="button" id="btn_icone">
+                                <i class='bx bx-menu-alt-left text-5xl'></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </nav>
+    
+                <section class="pt-36 max-lg:pt-20 max-md:pt-20 ">
+                    <div class="flex justify-center mb-5 font-Roboto">
+                        <h1 class="text-7xl  max-sm:pb-5 max-sm:text-center max-sm:text-6xl">
+                            Bienvennue chez
+                        </h1>
+                    </div>
+
+                    <div class="flex justify-center mb-5 font-Roboto">
+                        <h1 class="text-6xl max-lg:text-center max-md:text-center max-sm:text-5xl max-sm:px-0"> SCONE FINANCIAL GROUP </h1>
+                    </div>
+                    <div class="font-Manropa mb-10">
+                        <p class="text-xl px-72 text-center max-lg:text-center max-lg:px-28 max-md:text-center max-md:px-28 max-sm:px-0">
+                            Découvrez des solutions financières sur mesure qui propulsent vos ambitions vers de nouveaux sommets.
+                        </p>
+                    </div>
+
+                    <div class="flex justify-center pb-20 max-lg:pb-16 max-md:pb-5">
+                        <button class="border-gray-400 border rounded-full py-2 bg-slate-600 text-white px-4 text-xl items-center flex" type="button">
+                            ✨ Contact
+                            <i class='bx bx-right-arrow-alt text-2xl'></i>
+                        </button>
+                    </div>
+                      
+                </section>
+            </section> 
+        </section>
+        
+        <!-- la section  a propos de nous -->
+        <section class="px-4 max-sm:px-2" id="apropos">
+            <section class="mt-10  mb-8 rounded-lg px-5 py-4 ">
+                <div class="flex justify-center"> 
+                     <h1 class="text-4xl  font-Manropa max-lg:text-center max-sm:text-center"> À propos de nous. </h1>
+                </div>
+    
+                <section class="flex flex-row max-lg:flex-col-reverse max-md:flex-col-reverse">
+                    <div class="w-1/2 mt-10 pr-4 max-lg:w-full max-md:w-full max-md:mt-5">
+                        <p class="text-left text-lg">
+                            Chez SCONE Financial Group, nous croyons en un avenir où chaque individu et chaque entreprise peut atteindre ses objectifs financiers en toute confiance. Fondée avec la mission de démocratiser l'accès aux meilleures solutions financières, notre équipe d'experts travaille chaque jour pour offrir des services innovants, transparents et adaptés aux besoins de chacun.
+                            Nous proposons une approche axée sur l'écoute et la personnalisation, afin de fournir des solutions sur mesure qui accompagnent nos clients à chaque étape de leur parcours financier. Que ce soit pour la gestion de patrimoine, l’investissement ou le conseil stratégique, notre engagement est de bâtir une relation de confiance durable.
+                            Rejoignez-nous et découvrez comment SCONE Financial Group peut transformer vos ambitions financières en réalisations concrètes.
+                        </p>
+                    </div>
+
+                   <div class="w-1/2 mt-10 max-lg:w-full max-md:w-full">
+                        <img class="border-8 border-violet-400 rounded-3xl" src="./img/145 Fintech Audit Stock Photos, High-Res Pictures, and Images.jpeg" alt="">
+                   </div>
+                </section>
+            </section>
+        </section>
+
+
+
+        <!-- la partie de servie  -->
+        <section class="px-10 mb-5 max-lg:px-5 max-md:px-5 max-sm:px-2" id="service">
+            <section class="rounded-xl px-10 py-5 bg-gradient-to-b from-violet-200/15 to-violet-400/15 max-lg:px-5 max-md:px-5 max-sm:px-2">
+                <div class="flex justify-center">
+                    <h1 class="text-4xl  font-Manropa">Nos services</h1>
+                </div>
+
+                <section class="flex gap-4 mt-5 flex-row max-lg:grid-cols-1 max-md:flex-col"> 
+                    <div class="border px-5 py-2 rounded-xl  bg-white shadow-sm">
+
+                        <h1 class="flex justify-center py-3 font-bold text-4xl">Courtage</h1>
+
+                        <p class="text-justify">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ab nesciunt dicta facere distinctio harum. Quibusdam eius ipsam est saepe vitae perferendis a quis non. Sunt illum modi consectetur cumque!
+                            Commodi, aut rem accusamus assumenda vitae tenetur ratione? Sit ullam, temporibus eveniet dolorum dicta, veritatis, animi obcaecati repellendus totam repudiandae expedita? Sit ad mollitia ipsum laboriosam fuga dolorum eos possimus.
+                            Omnis mollitia iusto aspernatur neque aut ipsum ratione excepturi rem adipisci quaerat nulla, exercitationem illum ex nihil commodi quibusdam architecto sint eum voluptatem cum dolorum repellat sequi numquam quis! Esse!
+                            Minima inventore natus error, voluptatum esse aspernatur porro officiis cumque alias ea, harum qui veniam cupiditate minus mollitia? Non eaque perspiciatis quia odio explicabo nobis adipisci pariatur. Corrupti, officia nostrum.
+                        </p>
+                    </div>
+
+                    <div class="border px-5 py-2 rounded-xl bg-white shadow-sm">
+                        <h1 class="flex justify-center py-3 font-bold text-4xl max-sm:text-center">Fusion et acquisition</h1>
+
+                        <p class="text-justify">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ab nesciunt dicta facere distinctio harum. Quibusdam eius ipsam est saepe vitae perferendis a quis non. Sunt illum modi consectetur cumque!
+                            Commodi, aut rem accusamus assumenda vitae tenetur ratione? Sit ullam, temporibus eveniet dolorum dicta, veritatis, animi obcaecati repellendus totam repudiandae expedita? Sit ad mollitia ipsum laboriosam fuga dolorum eos possimus.
+                            Omnis mollitia iusto aspernatur neque aut ipsum ratione excepturi rem adipisci quaerat nulla, exercitationem illum ex nihil commodi quibusdam architecto sint eum voluptatem cum dolorum repellat sequi numquam quis! Esse!
+                            Minima inventore natus error, voluptatum esse aspernatur porro officiis cumque alias ea, harum qui veniam cupiditate minus mollitia? Non eaque perspiciatis quia odio explicabo nobis adipisci pariatur. Corrupti, officia nostrum.
+                        </p>
+                    </div>
+                </section>
+            </section>
+        </section>
+
+        <!-- la partie de vision mission ... -->
+        <section class="px-10 mb-5 mt-10 max-sm:px-5">
+            <div class="flex justify-center py-2">
+                <h1 class="text-4xl  font-Manropa max-sm:text-center">SCONE FINANCIAL GROUP</h1>
+            </div>
+
+            <div>
+                <p class="text-xl px-72 text-center max-lg:text-center max-lg:px-28 max-md:text-center max-md:px-28 max-sm:text-center max-sm:px-0">
+                    Découvrez des solutions financières sur mesure qui propulsent vos ambitions vers de nouveaux sommets.
+                </p>
+            </div>
+
+
+            <section class="flex gap-4 mt-10 flex-row max-lg:grid max-lg:grid-cols-2 max-sm:grid-cols-1">
+                <div class="border rounded-lg px-4 py-2 bg-green-500/50">
+                    <h1 class="text-4xl font-bold flex justify-center">Vision</h1>
+
+                    <p class="pt-5">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. A tempore accusamus cum enim dolores, soluta aspernatur vel ad provident explicabo nam quaerat repellat quis ex reiciendis, inventore molestiae, harum mollitia?
+                    </p>
+
+                    <button class="mt-2 w-full border py-2 rounded-lg bg-black text-slate-50" type="button">
+                        Contact
+                    </button>
+                </div>
+
+                <div class="border rounded-lg px-4 py-2 bg-black">
+                    <h1 class="text-4xl font-bold flex justify-center text-white">Mission</h1>
+
+                    <p class="pt-5 text-gray-300">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. A tempore accusamus cum enim dolores, soluta aspernatur vel ad provident explicabo nam quaerat repellat quis ex reiciendis, inventore molestiae, harum mollitia?
+                    </p>
+                </div>
+
+                <div class="border rounded-lg px-4 py-2 bg-violet-800/40">
+                    <h1 class="text-4xl font-bold flex justify-center">Nos Valeurs</h1>
+
+                    <p class="pt-5">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. A tempore accusamus cum enim dolores, soluta aspernatur vel ad provident explicabo nam quaerat repellat quis ex reiciendis, inventore molestiae, harum mollitia?
+                    </p>
+                </div>
+
+                <!-- bg-violet-200/15 -->
+                <div class="border rounded-lg px-4 py-2 bg-yellow-300/80">
+                    <h1 class="text-4xl font-bold text-center flex justify-center max-lg:text-center max-sm:text-center">Nos Pricipaux Marches</h1>
+
+                    <p class="pt-5">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. A tempore accusamus cum enim dolores, soluta aspernatur vel ad provident explicabo nam quaerat repellat quis ex reiciendis, inventore molestiae, harum mollitia?
+                    </p>
+                </div>
+
+                
+            </section>
+        </section>
+
+        <!--********************* la partie blog ********************************-->
+
+        <section class="px-10 max-lg:px-5 max-md:px-5 max-sm:px-2">
+            <section class=" rounded-2xl bg-gradient-to-b  from-violet-200/15 to-violet-400/35 px-10 py-4 max-lg:px-5 max-md:px-5 max-sm:px-2">
+                <div class="flex justify-center">
+                    <h1 class="text-4xl font-Manropa">Nos Blogs</h1>
+                </div>
+
+                <section class="pt-10 grid grid-cols-3 gap-2 max-lg:grid-cols-2 max-md:grid-cols-2 max-sm:grid-cols-1">
+                    
+                    <!-- blog 1 -->
+                    <section class="shadow-lg px-2 py-2 rounded-lg bg-slate-50">
+                        <img class=" max-h-80 min-h-80 w-full rounded-lg" src="./IMG_0443.JPG" alt="">
+
+                        <div class="">
+                            <h1 class="text-3xl pt-4 pb-2 ">Titre du blog</h1>
+
+                            <p class="line-clamp-3 ">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. At incidunt rerum sequi nisi dolor, amet impedit, voluptatum modi animi fugiat ullam mollitia exercitationem similique eius nostrum, eligendi consequatur dolores praesentium.
+                                Aut distinctio veritatis non placeat quibusdam nihil iusto praesentium, impedit sunt beatae laborum quia ducimus sed nostrum optio excepturi quaerat vel eaque ex velit illo! Necessitatibus veniam labore debitis fugit.
+                                Ducimus architecto tempora recusandae illo assumenda dolorem sunt inventore tenetur reprehenderit nesciunt voluptas qui expedita facere iste facilis maiores delectus, id et molestias magnam labore? Modi consectetur sequi impedit aperiam.
+                            </p>
+
+                            <div class="py-2">
+                                <button data-modal="modal1" class="open_modal flex items-center border p-2 rounded-lg bg-black text-white w-full justify-center" type="button">
+                                    Lire la suite
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 2 blog -->
+
+                    <section class="shadow-lg px-2 py-2 rounded-lg bg-slate-50">
+                        <img class=" max-h-80 min-h-80 w-full rounded-lg" src="./img/Carte de crédit d'achat en ligne et femme noire avec téléphone en studio pour le commerce électronique sur fond bleu Application fintech de débit et fille avec abonnement ou paiement budgétaire et banque _ Photo Premium.jpeg" alt="">
+
+                        <div class="">
+                            <h1 class="text-3xl pt-4 pb-2 ">Titre du blog</h1>
+
+                            <p class="line-clamp-3 ">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. At incidunt rerum sequi nisi dolor, amet impedit, voluptatum modi animi fugiat ullam mollitia exercitationem similique eius nostrum, eligendi consequatur dolores praesentium.
+                                Aut distinctio veritatis non placeat quibusdam nihil iusto praesentium, impedit sunt beatae laborum quia ducimus sed nostrum optio excepturi quaerat vel eaque ex velit illo! Necessitatibus veniam labore debitis fugit.
+                                Ducimus architecto tempora recusandae illo assumenda dolorem sunt inventore tenetur reprehenderit nesciunt voluptas qui expedita facere iste facilis maiores delectus, id et molestias magnam labore? Modi consectetur sequi impedit aperiam.
+                            </p>
+
+                            <div class="py-2">
+                                <button data-modal="modal2" class="open_modal flex items-center border p-2 rounded-lg bg-black text-white w-full justify-center" type="button">
+                                    Lire la suite
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 3 blog -->
+
+                    <section class="shadow-lg px-2 py-2 rounded-lg bg-slate-50">
+                        <img class=" max-h-80 min-h-80 w-full rounded-lg" src="./img/Premium Photo _ Young smiling casual african american woman with phone points finger to side.jpeg" alt="">
+
+                        <div class="">
+                            <h1 class="text-3xl pt-4 pb-2 ">Titre du blog</h1>
+
+                            <p class="line-clamp-3 ">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. At incidunt rerum sequi nisi dolor, amet impedit, voluptatum modi animi fugiat ullam mollitia exercitationem similique eius nostrum, eligendi consequatur dolores praesentium.
+                                Aut distinctio veritatis non placeat quibusdam nihil iusto praesentium, impedit sunt beatae laborum quia ducimus sed nostrum optio excepturi quaerat vel eaque ex velit illo! Necessitatibus veniam labore debitis fugit.
+                                Ducimus architecto tempora recusandae illo assumenda dolorem sunt inventore tenetur reprehenderit nesciunt voluptas qui expedita facere iste facilis maiores delectus, id et molestias magnam labore? Modi consectetur sequi impedit aperiam.
+                            </p>
+
+                            <div class="py-2">
+                                <button data-modal="modal3" class="open_modal flex items-center border p-2 rounded-lg bg-black text-white w-full justify-center" type="button">
+                                    Lire la suite
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+
+                    
+                </section>
+                
+            </section>  
+        </section>
+
+        <!--la partie de modal du blog -->
+
+        <section id="modal1" class="mymodal fixed inset-0 bg-white h-screen overflow-auto hidden py-5">
+
+            <div class="sticky top-0 px-10 max-lg:px-5 max-md:px-0">
+                <button class="close_modal flex w-full justify-end " type="button">
+                    <i class='bx bx-x text-4xl'></i>
+                </button>
+            </div>
+            <div class="flex flex-col px-28 max-lg:px-16 max-md:px-10 max-sm:px-5">
+                <div class="w-full max-h-[90vh] min-h-[90vh] overflow-hidden rounded-xl">
+                    <img class="object-cover w-full h-full rounded-xl" src="./IMG_0443.JPG" alt="">
+
+                </div>
+
+                <div class="w-full">
+                    <h1 class="text-3xl pt-4 pb-2 max-md:pt-2">Titre du blog</h1>
+
+                    <div>
+                        <p class="overflow-auto max-h-96">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est debitis magni provident, amet fugiat placeat aperiam quaerat temporibus! Fugit iure neque harum ducimus labore eaque iste, ex nemo. Perspiciatis, consequuntur.
+                            Quam quia voluptatem incidunt amet corporis doloribus, rerum corrupti dicta aliquam voluptates similique ullam eveniet perferendis nemo, voluptas necessitatibus numquam illo molestias ducimus quo deserunt labore aliquid. Atque, sapiente laborum!
+                            Magnam eveniet deleniti exercitationem, porro sunt maxime nihil, amet facilis numquam, delectus dolore reprehenderit officia commodi. Unde ab aspernatur voluptatibus, reprehenderit laboriosam reiciendis dolore doloremque? Corrupti saepe laudantium sint provident?
+                            Et provident cupiditate unde voluptate illum quaerat libero molestias cum impedit, perspiciatis atque reiciendis sequi accusantium possimus blanditiis porro, sapiente eum. Officiis facere fugit vero, id asperiores odit earum minima!
+                            Inventore praesentium enim eligendi, ad labore voluptate dolores soluta odit magni quis facere nisi id a reprehenderit nulla, repellat magnam ipsum. Recusandae modi sequi itaque voluptatum, ipsum provident eveniet quibusdam?
+                            Porro hic consequatur, quos vitae nostrum aliquid omnis minima itaque quas laborum culpa earum voluptatum dicta. Ut dolorum deserunt unde magni non expedita eaque beatae debitis veniam explicabo, dolor ad.
+                            Consectetur quibusdam odit ipsum. Molestiae, amet ut optio quis minus rem iure explicabo reprehenderit fuga fugiat ducimus maxime at beatae, iusto enim sapiente doloribus commodi deserunt quod quidem adipisci vel.
+                            Architecto repellat reiciendis, praesentium perspiciatis explicabo voluptates veniam molestias sunt ipsam reprehenderit sapiente animi id eum est maiores quisquam nesciunt aperiam. Fugit labore iusto ipsa enim. Nemo magnam facere impedit?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2 modal du blog 2 -->
+
+        <section id="modal2" class="mymodal fixed inset-0 bg-white h-screen overflow-auto hidden py-5">
+
+            <div class="sticky top-0 px-10 max-lg:px-5 max-md:px-0">
+                <button class="close_modal flex w-full justify-end " type="button">
+                    <i class='bx bx-x text-4xl'></i>
+                </button>
+            </div>
+            <div class="flex flex-col px-28 max-lg:px-16 max-md:px-10 max-sm:px-5">
+                <div class="w-full max-h-[90vh] overflow-hidden rounded-xl">
+                    <img class="object-cover w-full h-full rounded-xl" src="./img/Carte de crédit d'achat en ligne et femme noire avec téléphone en studio pour le commerce électronique sur fond bleu Application fintech de débit et fille avec abonnement ou paiement budgétaire et banque _ Photo Premium.jpeg" alt="">
+
+                </div>
+
+                <div class="w-full">
+                    <h1 class="text-3xl pt-4 pb-2 max-md:pt-2">Titre du blog</h1>
+
+                    <div>
+                        <p class="overflow-auto max-h-96">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est debitis magni provident, amet fugiat placeat aperiam quaerat temporibus! Fugit iure neque harum ducimus labore eaque iste, ex nemo. Perspiciatis, consequuntur.
+                            Quam quia voluptatem incidunt amet corporis doloribus, rerum corrupti dicta aliquam voluptates similique ullam eveniet perferendis nemo, voluptas necessitatibus numquam illo molestias ducimus quo deserunt labore aliquid. Atque, sapiente laborum!
+                            Magnam eveniet deleniti exercitationem, porro sunt maxime nihil, amet facilis numquam, delectus dolore reprehenderit officia commodi. Unde ab aspernatur voluptatibus, reprehenderit laboriosam reiciendis dolore doloremque? Corrupti saepe laudantium sint provident?
+                            Et provident cupiditate unde voluptate illum quaerat libero molestias cum impedit, perspiciatis atque reiciendis sequi accusantium possimus blanditiis porro, sapiente eum. Officiis facere fugit vero, id asperiores odit earum minima!
+                            Inventore praesentium enim eligendi, ad labore voluptate dolores soluta odit magni quis facere nisi id a reprehenderit nulla, repellat magnam ipsum. Recusandae modi sequi itaque voluptatum, ipsum provident eveniet quibusdam?
+                            Porro hic consequatur, quos vitae nostrum aliquid omnis minima itaque quas laborum culpa earum voluptatum dicta. Ut dolorum deserunt unde magni non expedita eaque beatae debitis veniam explicabo, dolor ad.
+                            Consectetur quibusdam odit ipsum. Molestiae, amet ut optio quis minus rem iure explicabo reprehenderit fuga fugiat ducimus maxime at beatae, iusto enim sapiente doloribus commodi deserunt quod quidem adipisci vel.
+                            Architecto repellat reiciendis, praesentium perspiciatis explicabo voluptates veniam molestias sunt ipsam reprehenderit sapiente animi id eum est maiores quisquam nesciunt aperiam. Fugit labore iusto ipsa enim. Nemo magnam facere impedit?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 3 modal du blog 3 -->
+
+        <section id="modal3" class="mymodal fixed inset-0 bg-white h-screen overflow-auto hidden py-5">
+
+            <div class="sticky top-0 px-10 max-lg:px-5 max-md:px-0">
+                <button class="close_modal flex w-full justify-end " type="button">
+                    <i class='bx bx-x text-4xl'></i>
+                </button>
+            </div>
+            <div class="flex flex-col px-28 max-lg:px-16 max-md:px-10 max-sm:px-5">
+                <div class="w-full max-h-[90vh] overflow-hidden rounded-xl">
+                    <img class="object-cover w-full h-full rounded-xl" src="./img/Premium Photo _ Young smiling casual african american woman with phone points finger to side.jpeg" alt="">
+
+                </div>
+
+                <div class="w-full">
+                    <h1 class="text-3xl pt-4 pb-2 max-md:pt-2">Titre du blog</h1>
+
+                    <div>
+                        <p class="overflow-auto max-h-96">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est debitis magni provident, amet fugiat placeat aperiam quaerat temporibus! Fugit iure neque harum ducimus labore eaque iste, ex nemo. Perspiciatis, consequuntur.
+                            Quam quia voluptatem incidunt amet corporis doloribus, rerum corrupti dicta aliquam voluptates similique ullam eveniet perferendis nemo, voluptas necessitatibus numquam illo molestias ducimus quo deserunt labore aliquid. Atque, sapiente laborum!
+                            Magnam eveniet deleniti exercitationem, porro sunt maxime nihil, amet facilis numquam, delectus dolore reprehenderit officia commodi. Unde ab aspernatur voluptatibus, reprehenderit laboriosam reiciendis dolore doloremque? Corrupti saepe laudantium sint provident?
+                            Et provident cupiditate unde voluptate illum quaerat libero molestias cum impedit, perspiciatis atque reiciendis sequi accusantium possimus blanditiis porro, sapiente eum. Officiis facere fugit vero, id asperiores odit earum minima!
+                            Inventore praesentium enim eligendi, ad labore voluptate dolores soluta odit magni quis facere nisi id a reprehenderit nulla, repellat magnam ipsum. Recusandae modi sequi itaque voluptatum, ipsum provident eveniet quibusdam?
+                            Porro hic consequatur, quos vitae nostrum aliquid omnis minima itaque quas laborum culpa earum voluptatum dicta. Ut dolorum deserunt unde magni non expedita eaque beatae debitis veniam explicabo, dolor ad.
+                            Consectetur quibusdam odit ipsum. Molestiae, amet ut optio quis minus rem iure explicabo reprehenderit fuga fugiat ducimus maxime at beatae, iusto enim sapiente doloribus commodi deserunt quod quidem adipisci vel.
+                            Architecto repellat reiciendis, praesentium perspiciatis explicabo voluptates veniam molestias sunt ipsam reprehenderit sapiente animi id eum est maiores quisquam nesciunt aperiam. Fugit labore iusto ipsa enim. Nemo magnam facere impedit?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- la partie contact -->
+        <section class="px-20 mt-10">
+            <section class="rounded-xl">
+                <section class="flex h-96 border rounded-xl">
+                    <section class="w-1/2 bg-black text-slate-50 py-4 rounded-xl">
+                        <h1 class="flex justify-center text-4xl">Nous Contacter</h1>
+
+                        <section class="flex justify-center mt-4">
+                            <div class="mt-5">
+                                <div class="pb-4">
+                                    <a class="text-2xl items-center flex font-Manropa" href=" ">
+                                        <i class='bx bx-phone-call text-3xl'></i>
+                                        097 90 30 995
+                                    </a>
+                                </div>
+        
+                                <div class="pb-4">
+                                    <a class="text-2xl items-center flex" href="#">
+                                        <i class='bx bxl-whatsapp text-3xl'></i>
+                                        081 36 32 272
+                                    </a>
+                                </div>
+        
+                                <div class="pb-4">
+                                    <a class="text-2xl items-center flex" href="#">
+                                        <i class='bx bx-envelope text-3xl'></i>
+                                        mauricemiema90@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="flex justify-between px-20 mt-16">
+                            <div>
+                                <a class="hover:bg-blue-400 rounded-lg px-2 pt-6" href="">
+                                    <i class='bx bxl-twitter text-4xl'></i>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a class="hover:bg-blue-400 rounded-lg px-2 pt-6" href="">
+                                    <i class='bx bxl-instagram-alt text-4xl'></i>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a class="hover:bg-blue-400 rounded-lg px-2 pt-6" href="">                 
+                                    <i class='bx bxl-facebook-circle text-4xl'></i>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a class="hover:bg-blue-400 rounded-lg px-2 pt-6" href="">
+                                    <i class='bx bxl-linkedin-square text-4xl'></i>
+                                </a>
+                            </div>
+                        </section>
+
+                    </section>
+
+                    <section class="w-1/2">
+                        <div id="map" class="h-96 w-full">
+                            
+                        </div>
+                    </section>
+
+                   
+                </section>
+            </section>
+        </section>
+          
+    </main>
+    <!-- pour leaft -->
+    
+    <!-- pour le fichier index.js -->
+    <script src="index.js"></script>
+</body>
+</html>
