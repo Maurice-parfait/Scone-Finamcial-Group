@@ -1,3 +1,10 @@
+// const sr = ScrollReveal();
+
+// sr.reveal('#lanav', {
+//     origin : 'top',
+//     duration : 1000,
+// });
+
 const navscrol = document.getElementById("navscrol");
 const icone_btn = document.getElementById("btn_icone");
 
@@ -39,6 +46,4 @@ window.addEventListener("scroll", ()=>{
 
 icone_btn.addEventListener('click', function(){
     alert("okay");
-});
-
-// la carte maps
+}); 

@@ -7,33 +7,40 @@
     <link rel="stylesheet" href="./src/output.css">
     <!-- pour les icones -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <!-- pour leaft -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""/>
 </head>
 <body class="p-0 m-0 font-Manropa" >
    
     <main class="h-auto">
-        <section class="relative inset-0 h-screen max-lg:h-auto max-md:h-auto rounded-bl-3xl rounded-br-3xl w-full max-md:w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)]">
+        <section id="acceuil" class="relative inset-0 h-screen max-lg:h-auto max-md:h-auto rounded-bl-3xl rounded-br-3xl w-full max-md:w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)]">
             <section class="px-28 max-lg:px-16 max-md:px-10 max-sm:px-5">
-                <nav class="flex justify-between  pt-4 items-center ">
+                <nav class="flex justify-between  pt-4 items-center" id="lanav">
                     <div>
                         <button class="text-4xl font-bold" type="button">SCONE</button>
                     </div>
     
                     <div class="px-4 py-1 max-lg:hidden max-lg:inset-0 max-lg:bg-red-800  max-lg:rounded-none max-md:hidden">
                         <ul class="flex max-lg:block max-lg:justify-center" id="navscrol">
-                            <li class="px-5 py-1 text-xl cursor-pointer hover:bg-black hover:text-white hover:rounded-xl">Aceuil</li>
+                            <li class="px-5 py-1 text-xl cursor-pointer hover:bg-black hover:text-white hover:rounded-xl">
+                                <a href="#acceuil">
+                                    Acceuil
+                                </a>
+                            </li>
                             <li class="px-5 py-1 text-xl cursor-pointer hover:bg-black hover:text-white hover:rounded-xl">
                                 <a href="#apropos"> A Propos de Nous</a>
                             </li>
                             <li class="px-5 py-1 text-xl cursor-pointer hover:bg-black hover:text-white hover:rounded-xl">
                                 <a href="#service"> Nos Service</a>
                             </li>
-                            <li class="px-5 py-1 text-xl cursor-pointer hover:bg-black hover:text-white hover:rounded-xl">Blog</li>
-                            <li class="px-5 py-1 text-xl cursor-pointer hover:bg-black hover:text-white hover:rounded-xl">Contact</li>
+                            <li class="px-5 py-1 text-xl cursor-pointer hover:bg-black hover:text-white hover:rounded-xl">
+                                <a href="#blog">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="px-5 py-1 text-xl cursor-pointer hover:bg-black hover:text-white hover:rounded-xl">
+                                <a href="#contact">
+                                    Contact
+                                </a>
+                            </li>
                         </ul>
               
                     </div>
@@ -149,27 +156,25 @@
 
 
             <section class="flex gap-4 mt-10 flex-row max-lg:grid max-lg:grid-cols-2 max-sm:grid-cols-1">
-                <div class="border rounded-lg px-4 py-2 bg-green-500/50">
+                <div class="border rounded-lg px-4 py-2 bg-violet-200/15">
                     <h1 class="text-4xl font-bold flex justify-center">Vision</h1>
 
                     <p class="pt-5">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. A tempore accusamus cum enim dolores, soluta aspernatur vel ad provident explicabo nam quaerat repellat quis ex reiciendis, inventore molestiae, harum mollitia?
                     </p>
 
-                    <button class="mt-2 w-full border py-2 rounded-lg bg-black text-slate-50" type="button">
-                        Contact
-                    </button>
+                    
                 </div>
 
-                <div class="border rounded-lg px-4 py-2 bg-black">
-                    <h1 class="text-4xl font-bold flex justify-center text-white">Mission</h1>
+                <div class="border rounded-lg px-4 py-2 bg-violet-200/15">
+                    <h1 class="text-4xl font-bold flex justify-center ">Mission</h1>
 
-                    <p class="pt-5 text-gray-300">
+                    <p class="pt-5 ">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. A tempore accusamus cum enim dolores, soluta aspernatur vel ad provident explicabo nam quaerat repellat quis ex reiciendis, inventore molestiae, harum mollitia?
                     </p>
                 </div>
 
-                <div class="border rounded-lg px-4 py-2 bg-violet-800/40">
+                <div class="border rounded-lg px-4 py-2 bg-violet-200/15">
                     <h1 class="text-4xl font-bold flex justify-center">Nos Valeurs</h1>
 
                     <p class="pt-5">
@@ -178,7 +183,7 @@
                 </div>
 
                 <!-- bg-violet-200/15 -->
-                <div class="border rounded-lg px-4 py-2 bg-yellow-300/80">
+                <div class="border rounded-lg px-4 py-2 bg-violet-200/15">
                     <h1 class="text-4xl font-bold text-center flex justify-center max-lg:text-center max-sm:text-center">Nos Pricipaux Marches</h1>
 
                     <p class="pt-5">
@@ -192,7 +197,7 @@
 
         <!--********************* la partie blog ********************************-->
 
-        <section class="px-10 max-lg:px-5 max-md:px-5 max-sm:px-2">
+        <section class="px-10 max-lg:px-5 max-md:px-5 max-sm:px-2" id="blog">
             <section class=" rounded-2xl bg-gradient-to-b  from-violet-200/15 to-violet-400/35 px-10 py-4 max-lg:px-5 max-md:px-5 max-sm:px-2">
                 <div class="flex justify-center">
                     <h1 class="text-4xl font-Manropa">Nos Blogs</h1>
@@ -375,107 +380,137 @@
         </section>
 
         <!-- la partie contact -->
-        <section class="px-16 mt-10">
+        <section class="px-10 mt-10 max-lg:px-5" id="contact">
             <section class="rounded-xl">
-                <section class="h-96 border rounded-xl">
-                    <section class="py-4 hidden">
+                <section class="rounded-xl">
+                    <section class="py-4">
                         <h1 class="flex justify-center text-4xl">Nous Contacter</h1>
+                        <section class="grid grid-cols-4 gap-4 mt-4 max-lg:grid-cols-2 max-md:grid-cols-2 max-sm:grid-cols-1">
+                            <div class="border px-5 py-5 rounded-xl bg-violet-200/35">
+                                <h1 class="text-3xl flex justify-center pb-2">Apelle</h1>
 
-                        <section>
-                            <div class="border px-10 py-5 rounded-xl">
-                                <h1>Apelle</h1>
-
-                                <div>
-                                    <a href=""> 
-                                        090 37 39 677 
+                                <div class="py-4 flex justify-center text-xl">
+                                    <a class="flex items-center" href="tel:+243903739677"> 
+                                        <i class='bx bx-phone-call text-3xl'></i>
+                                        +243 90 37 39 677
                                     </a>
                                 </div>
 
-                                <div>
-                                    <a href=""> 
-                                        090 37 39 677 
+                                <div class="py-4 flex justify-center text-xl">
+                                    <a class="flex items-center" href="tel:+243813632272"> 
+                                        <i class='bx bx-phone-call text-3xl'></i>
+                                        +243 81 36 32 272
                                     </a>
                                 </div>
 
-                                <div>
-                                    <a href=""> 
-                                        090 37 39 677 
+                                <div class="py-4 flex justify-center text-xl">
+                                    <a class="flex items-center" href="+243903739677"> 
+                                        <i class='bx bx-phone-call text-3xl'></i>
+                                        +243 90 37 39 677 
                                     </a>
                                 </div>
                             </div>
-                        </section>
-                    </section>
 
-                    <section class="w-1/2 bg-black text-slate-50 py-4 rounded-xl hidden">
-                        <h1 class="flex justify-center text-4xl">Nous Contacter</h1>
+                            <div class="border px-5 py-5 rounded-xl bg-violet-200/35">
+                                <h1 class="text-3xl flex justify-center pb-2">Mail</h1>
 
-                        <section class="flex justify-center mt-4">
-                            <div class="mt-5">
-                                <div class="pb-4">
-                                    <a class="text-2xl items-center flex font-Manropa" href="">
-                                        <i class='bx bx-phone-call text-3xl'></i>
-                                        097 90 30 995
-                                    </a>
-                                </div>
-        
-                                <div class="pb-4">
-                                    <a class="text-2xl items-center flex" href="#">
-                                        <i class='bx bxl-whatsapp text-3xl'></i>
-                                        081 36 32 272
-                                    </a>
-                                </div>
-        
-                                <div class="pb-4">
-                                    <a class="text-2xl items-center flex" href="#">
-                                        <i class='bx bx-envelope text-3xl'></i>
+                                <div class="pt-4">
+                                    <a class="text-lg max-md:text-center max-md:text-wrap" href="mailto:mauricemiema90@gmail.com"> 
                                         mauricemiema90@gmail.com
                                     </a>
                                 </div>
                             </div>
+
+                            <div class="border px-5 py-5 rounded-xl bg-violet-200/35">
+                                <h1 class="text-3xl flex justify-center pb-2">Reseaux Sociaux</h1>
+
+                                <div class="flex justify-between pt-10">
+                                    <div>
+                                        <a class="hover:bg-violet-300/55 rounded-lg px-2 pt-6" href="#">
+                                            <i class='bx bxl-twitter text-4xl'></i>
+                                        </a>
+                                    </div>
+        
+                                    <div>
+                                        <a class="hover:bg-violet-300/55 rounded-lg px-2 pt-6" href="#">
+                                            <i class='bx bxl-instagram-alt text-4xl'></i>
+                                        </a>
+                                    </div>
+        
+                                    <div>
+                                        <a class="hover:bg-violet-300/55 rounded-lg px-2 pt-6" href="#">                 
+                                            <i class='bx bxl-facebook-circle text-4xl'></i>
+                                        </a>
+                                    </div>
+        
+                                    <div>
+                                        <a class="hover:bg-violet-300/55 rounded-lg px-2 pt-6" href="">
+                                            <i class='bx bxl-linkedin-square text-4xl'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="border px-5 py-5 rounded-xl bg-violet-200/35">
+                                <h1 class="text-3xl flex justify-center">Adresse</h1>
+
+                                <div class="mt-4">
+                                    <h1 class="text-xl">
+                                        N° 4933 AV De la Révolution , Lubumbashi
+                                    </h1>
+                                </div>
+                            </div>
                         </section>
-
-                        <section class="flex justify-between px-20 mt-16">
-                            <div>
-                                <a class="hover:bg-blue-400 rounded-lg px-2 pt-6" href="">
-                                    <i class='bx bxl-twitter text-4xl'></i>
-                                </a>
-                            </div>
-
-                            <div>
-                                <a class="hover:bg-blue-400 rounded-lg px-2 pt-6" href="">
-                                    <i class='bx bxl-instagram-alt text-4xl'></i>
-                                </a>
-                            </div>
-
-                            <div>
-                                <a class="hover:bg-blue-400 rounded-lg px-2 pt-6" href="">                 
-                                    <i class='bx bxl-facebook-circle text-4xl'></i>
-                                </a>
-                            </div>
-
-                            <div>
-                                <a class="hover:bg-blue-400 rounded-lg px-2 pt-6" href="">
-                                    <i class='bx bxl-linkedin-square text-4xl'></i>
-                                </a>
-                            </div>
-                        </section>
-
-                    </section>
-
-                    <section class="w-1/2 hidden">
-                        <div id="map" class="h-auto w-full">
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1wQWY707CoTo-Gvp0yV-ByEEU6k5FnBM&ehbc=2E312F" width="640" height="480"></iframe>
-                        </div>
-                    </section>
-
-                   
+                    </section> 
                 </section>
             </section>
         </section>
+
+        <footer class="mt-8 px-10">
+            <section class="flex items-center pt-10 mb-2">
+                <div class="w-[40%] max-lg:w-full max-lg:text-center">
+                    <h1 class="text-4xl">Scone Financial Group</h1>
+                </div>
+
+                <div class="flex w-[60%] justify-end max-lg:hidden">
+                    <ul class="flex max-lg:block max-lg:justify-center" id="navscrol">
+                        <li class="px-5 py-1 text-lg cursor-pointer ">
+                            <a href="#acceuil">
+                                Acceuil
+                            </a>
+                        </li>
+                        <li class="px-5 py-1 text-lg cursor-pointer ">
+                            <a href="#apropos"> A Propos de Nous</a>
+                        </li>
+                        <li class="px-5 py-1 text-lg cursor-pointer ">
+                            <a href="#service"> Nos Service</a>
+                        </li>
+                        <li class="px-5 py-1 text-lg cursor-pointer ">
+                            <a href="#blog">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="px-5 py-1 text-lg cursor-pointer ">
+                            <a href="#contact">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <hr>
+
+            <section class="mt-2">
+                <h1 class="flex justify-center"> @2024/Scone Financial Group </h1>
+            </section>
+        </footer>
           
     </main>
-    <!-- pour leaft -->
-    
+    <!-- pour scrollreal -->
+    <script src="https://unpkg.com/scrollreveal"></script> 
     <!-- pour le fichier index.js -->
     <script src="./index.js"></script>
 </body>
