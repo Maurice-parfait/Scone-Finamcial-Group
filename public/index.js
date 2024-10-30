@@ -1,9 +1,54 @@
-// const sr = ScrollReveal();
+// // scrollTrigger
+// // Assurez-vous que le DOM est complètement chargé
+// document.addEventListener("DOMContentLoaded", function () {
+//     gsap.registerPlugin(ScrollTrigger);
 
-// sr.reveal('#lanav', {
-//     origin : 'top',
-//     duration : 1000,
+//     // Fonction pour déclencher l'animation
+//     const animateElement = (element) => {
+//         gsap.fromTo(element, 
+//             {
+//                 opacity: 0,  // Opacité initiale
+//                 y: 50,        // Décalage vertical initial
+//             }, 
+//             {
+//                 opacity: 1,   // Opacité finale
+//                 y: 0,         // Position finale
+//                 duration: 1,  // Durée de l'animation
+//                 overwrite: "auto" // Écraser les animations précédentes
+//             }
+//         );
+//     };
+
+//     // Configuration de ScrollTrigger
+//     ScrollTrigger.create({
+//         trigger: '.bienvenu', // L'élément qui déclenche l'animation
+//         start: 'top 80%', // Début de l'animation
+//         onEnter: () => animateElement('.bienvenu'), // Déclenche l'animation lorsque l'élément entre dans la vue
+//         onEnterBack: () => animateElement('.bienvenu'), // Déclenche l'animation lorsque l'élément entre à nouveau dans la vue en défilant vers le haut
+//         toggleActions: 'play none none reverse', // Actions de toggle, optionnel ici
+//         duration: 1,
+//     });
+
+//     ScrollTrigger.create({
+//         trigger: '.untexte', // L'élément qui déclenche l'animation
+//         start: 'top 90%', // Début de l'animation
+//         onEnter: () => animateElement('.untexte'), // Déclenche l'animation lorsque l'élément entre dans la vue
+//         onEnterBack: () => animateElement('.untexte'), // Déclenche l'animation lorsque l'élément entre à nouveau dans la vue en défilant vers le haut
+//         toggleActions: 'play none none reverse', // Actions de toggle, optionnel ici
+//         duration: 2,
+
+//     });
+
+//     ScrollTrigger.create({
+//         trigger: '.scone', // L'élément qui déclenche l'animation
+//         start: 'top 80%', // Début de l'animation
+//         onEnter: () => animateElement('.scone'), // Déclenche l'animation lorsque l'élément entre dans la vue
+//         onEnterBack: () => animateElement('.scone'), // Déclenche l'animation lorsque l'élément entre à nouveau dans la vue en défilant vers le haut
+//         toggleActions: 'play none none reverse', // Actions de toggle, optionnel ici
+//         duration: 3,
+//     });
 // });
+
 
 const navscrol = document.getElementById("navscrol");
 const icone_btn = document.getElementById("btn_icone");
@@ -57,8 +102,9 @@ closemenu.addEventListener('click', () => {
     menu.classList.add("max-md:hidden");
 });
 
-// close menu lg 
-
-function closeMenulg() {
-    document.getElementById("menu").classList.add("max-lg:hidden");
-}
+// Sélectionnez tous les éléments <li> avec la classe "link"
+document.querySelectorAll('#navscrol .link').forEach(item => {
+    item.addEventListener('click', () => {
+        document.getElementById('menu').classList.add('max-lg:hidden');
+    });
+});

@@ -1062,8 +1062,8 @@ video {
     inset: 0px;
   }
 
-  .max-lg\:z-50{
-    z-index: 50;
+  .max-lg\:z-0{
+    z-index: 0;
   }
 
   .max-lg\:mt-16{
