@@ -7,6 +7,8 @@
 
 const navscrol = document.getElementById("navscrol");
 const icone_btn = document.getElementById("btn_icone");
+const closemenu = document.getElementById("closemenu");
+const menu = document.getElementById("menu");
 
 
 // pour le modal
@@ -36,14 +38,27 @@ close_modals.forEach(closebutton => {
 
 
 // pour le scroll
-window.addEventListener("scroll", ()=>{
-    if (window.scrollY >= 50) {
-        navscrol.classList.add("bg-slate-900");
-    }else{
-        navscrol.classList.remove("bg-slate-900");
-    }
-});
+// window.addEventListener("scroll", ()=>{
+//     if (window.scrollY >= 50) {
+//         navscrol.classList.add("bg-slate-900");
+//     }else{
+//         navscrol.classList.remove("bg-slate-900");
+//     }
+// });
 
 icone_btn.addEventListener('click', function(){
-    alert("okay");
+    menu.classList.remove("max-lg:hidden");
+    menu.classList.remove("max-md:hidden");
+
 }); 
+
+closemenu.addEventListener('click', () => {
+    menu.classList.add('max-lg:hidden');
+    menu.classList.add("max-md:hidden");
+});
+
+// close menu lg 
+
+function closeMenulg() {
+    document.getElementById("menu").classList.add("max-lg:hidden");
+}

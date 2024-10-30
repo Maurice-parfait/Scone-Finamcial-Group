@@ -18,25 +18,32 @@
                         <button class="text-4xl font-bold" type="button">SCONE</button>
                     </div>
     
-                    <div class="px-4 py-1 max-lg:hidden max-lg:inset-0 max-lg:bg-red-800  max-lg:rounded-none max-md:hidden">
-                        <ul class="flex max-lg:block max-lg:justify-center" id="navscrol">
-                            <li class="px-5 py-1 text-xl cursor-pointer hover:bg-black hover:text-white hover:rounded-xl">
-                                <a href="#acceuil">
+                    <div id="menu" class="px-4 py-1 max-lg:hidden max-lg:flex max-lg:justify-end max-lg:w-full max-lg:px-28 
+                    max-lg:fixed max-lg:z-50 max-lg:inset-0 max-lg:h-screen max-lg:bg-white/80 max-lg:backdrop-blur-lg  max-lg:rounded-none 
+                    max-md:hidden max-sm:px-5">
+                        <div class="hidden absolute inset-0 px-10 py-10 max-lg:block">
+                            <button class="" type="button" id="closemenu">
+                                <i class='bx bx-x text-5xl'></i>
+                            </button>
+                        </div>
+                        <ul class="flex max-lg:block max-lg:mt-16 " id="navscrol">
+                            <li onclick="closeMenulg()" class="px-5 max-lg:py-4 max-lg:text-2xl py-1 text-xl cursor-pointer hover:bg-black hover:text-white hover:rounded-xl">
+                                <a  href="#acceuil">
                                     Acceuil
                                 </a>
                             </li>
-                            <li class="px-5 py-1 text-xl cursor-pointer hover:bg-black hover:text-white hover:rounded-xl">
+                            <li onclick="closeMenulg()" class="px-5 max-lg:py-4 max-lg:text-2xl py-1 text-xl cursor-pointer hover:bg-black hover:text-white hover:rounded-xl">
                                 <a href="#apropos"> A Propos de Nous</a>
                             </li>
-                            <li class="px-5 py-1 text-xl cursor-pointer hover:bg-black hover:text-white hover:rounded-xl">
+                            <li class="px-5 max-lg:py-4 max-lg:text-2xl py-1 text-xl cursor-pointer hover:bg-black hover:text-white hover:rounded-xl">
                                 <a href="#service"> Nos Service</a>
                             </li>
-                            <li class="px-5 py-1 text-xl cursor-pointer hover:bg-black hover:text-white hover:rounded-xl">
+                            <li class="px-5 max-lg:py-4 max-lg:text-2xl py-1 text-xl cursor-pointer hover:bg-black hover:text-white hover:rounded-xl">
                                 <a href="#blog">
                                     Blog
                                 </a>
                             </li>
-                            <li class="px-5 py-1 text-xl cursor-pointer hover:bg-black hover:text-white hover:rounded-xl">
+                            <li class="px-5 max-lg:py-4 max-lg:text-2xl py-1 text-xl cursor-pointer hover:bg-black hover:text-white hover:rounded-xl">
                                 <a href="#contact">
                                     Contact
                                 </a>
